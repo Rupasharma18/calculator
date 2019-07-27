@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet"  type = "text/css" href="style.css">
+    </head>
+    <center><body>
+        <div class="forms">
+            <form name="screen">
+                <input type="text" name="textview">
+            </form>
+            <table >
+                <tr >
+                    <td><input type="button" value="1" onclick="screen.textview.value+='1'"></td>
+                    <td><input type="button" value="2"  onclick="screen.textview.value+='2'"></td>
+                    <td><input type="button" value="3"  onclick="screen.textview.value+='3'"></td>
+                    <td><input type="button" value="+"  onclick="screen.textview.value+='+'"></td>
+                </tr>
+                <tr >
+                    <td><input type="button" value="4"  onclick="screen.textview.value+='4'"></td>
+                    <td><input type="button" value="5"  onclick="screen.textview.value+='5'" ></td>
+                    <td><input type="button" value="6"  onclick="screen.textview.value+='6'"></td>
+                    <td><input type="button" value="-"  onclick="screen.textview.value+='-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7"  onclick="screen.textview.value+='7'"></td>
+                    <td><input type="button" value="8"  onclick="screen.textview.value+='8'"></td>
+                    <td><input type="button" value="9"  onclick="screen.textview.value+='9'"></td>
+                    <td><input type="button" value="/"  onclick="screen.textview.value+='/'"></td>
+                </tr>    
+                <tr>
+                    <td><input type="button" value="c"  onclick="screen.textview.value= ''"></td>
+                    <td><input type="button" value="0"  onclick="screen.textview.value+='0'"></td>
+                    <td><input type="button" value="*"  onclick="screen.textview.value+='*'"></td>
+                    <td><input type="button" value="=" onclick="screen.textview.value=eval(screen.textview.value)"></td>
+                </tr> 
+            </table>
+
+        </div>
+    </body></center>
+</html>
